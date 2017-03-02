@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/assets"/><source path="/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build-types/debug/assets"/></dataSet></merger>
