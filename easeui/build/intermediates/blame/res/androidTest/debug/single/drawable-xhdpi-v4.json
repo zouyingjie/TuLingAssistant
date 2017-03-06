@@ -108,12 +108,12 @@
         "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ease_chatting_biaoqing_btn_enable.png"
     },
     {
-        "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ease_chat_location_pressed.png",
-        "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ease_chat_location_pressed.png"
-    },
-    {
         "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ease_dot_emojicon_unselected.png",
         "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ease_dot_emojicon_unselected.png"
+    },
+    {
+        "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ease_chat_location_pressed.png",
+        "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ease_chat_location_pressed.png"
     },
     {
         "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ease_delete_expression.png",

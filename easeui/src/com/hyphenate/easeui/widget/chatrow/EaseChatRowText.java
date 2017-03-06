@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.widget.TextView.BufferType;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class EaseChatRowText extends EaseChatRow{
 
@@ -86,9 +87,5 @@ public class EaseChatRowText extends EaseChatRow{
     @Override
     protected void onBubbleClick() {
         // TODO Auto-generated method stub
-        
     }
-
-
-
 }

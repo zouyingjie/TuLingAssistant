@@ -32,12 +32,12 @@
         "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/res/layout/ease_row_chat_history.xml"
     },
     {
-        "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/debug/layout/ease_row_received_message.xml",
-        "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/res/layout/ease_row_received_message.xml"
-    },
-    {
         "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/debug/layout/ease_expression_gridview.xml",
         "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/res/layout/ease_expression_gridview.xml"
+    },
+    {
+        "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/debug/layout/ease_row_received_message.xml",
+        "source": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/res/layout/ease_row_received_message.xml"
     },
     {
         "merged": "/Users/zouyingjie/soft/android/openSourceCode/ChatUIDemo/easeui/build/intermediates/res/merged/debug/layout/ease_row_sent_file.xml",

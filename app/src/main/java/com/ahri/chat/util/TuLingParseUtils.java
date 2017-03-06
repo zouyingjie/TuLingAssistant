@@ -2,6 +2,7 @@ package com.ahri.chat.util;
 
 import com.ahri.chat.constant.Constant;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -40,14 +41,34 @@ public class TuLingParseUtils {
     private static String parseLink(JSONObject json) throws JSONException {
         String text = json.getString("text");
         String url = json.getString("url");
-        return text +" : "+ url;
+        return text + " : " + url;
     }
 
-    private static String parseNews(JSONObject json) {
-        return "";
+    private static String parseNews(JSONObject json) throws JSONException {
+
+        String text = json.getString("text");
+        StringBuilder builder = new StringBuilder(text);
+        JSONArray jsonArray = json.getJSONArray("list");
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject jsonObject = (JSONObject) jsonArray.get(i);
+            String title = jsonObject.getString("article");
+            String url = jsonObject.getString("detailurl");
+            builder.append(title).append(" ").append(url).append("\n");
+        }
+        return builder.toString();
     }
 
-    private static String parseCookBook(JSONObject json) {
-        return "";
+    private static String parseCookBook(JSONObject json) throws JSONException {
+
+        String text = json.getString("text");
+        StringBuilder builder = new StringBuilder(text);
+        JSONArray jsonArray = json.getJSONArray("list");
+        if (jsonArray.length() > 0) {
+            JSONObject jsonObject = (JSONObject) jsonArray.get(0);
+            String name = jsonObject.getString("name");
+            String url = jsonObject.getString("detailurl");
+            builder.append(name).append(" ").append(url);
+        }
+        return builder.toString();
     }
 }

@@ -21,31 +21,17 @@ public class ExtendChatFragment extends EaseChatFragment {
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case FLAG_SEND_MESSAGE:
-//                    Toast.makeText(getActivity(), (String) msg.obj, Toast.LENGTH_SHORT).show();
-//                    parseInfo();
                     refreshMessageList(TuLingParseUtils.parseInfo((String) msg.obj));
                     break;
             }
         }
     };
 
-//    @Override
-//    public void onActivityCreated(Bundle savedInstanceState) {
-//        super.onActivityCreated(savedInstanceState);
-//        MyMessageAdapter messageAdapter = new MyMessageAdapter(getActivity(), toChatUsername, chatType, messageList.getListView());
-//        messageAdapter.setShowAvatar(true);
-//        messageAdapter.setShowUserNick(false);
-//        messageAdapter.setMyBubbleBg(messageList.myBubbleBg);
-//        messageAdapter.setOtherBuddleBg(messageList.otherBuddleBg);
-//        messageAdapter.setCustomChatRowProvider(null);
-//        messageList.getListView().setAdapter(messageAdapter);
-//
-//    }
 
     @Override
     protected void sendTextMessage(final String content) {
-//            super.sendTextMessage(content);
         conversation.appendMessage(createSendMessage(content));
+        messageList.refresh();
         new Thread() {
             @Override
             public void run() {

@@ -43,8 +43,9 @@ android {
 }
 
 dependencies {
-	//release时需要把hyphenatechatsdk的依赖注释掉，sdk已经被打成jar包放在libs底下
-	//compile project(':hyphenatechatsdk')
-    compile fileTree(dir: 'libs', include: '*.jar')
+    //release时需要把hyphenatechatsdk的依赖注释掉，sdk已经被打成jar包放在libs底下
+    //compile project(':hyphenatechatsdk')
+    compile fileTree(include: '*.jar', dir: 'libs')
     compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('libs/hyphenatechat_3.2.3.jar')
 }

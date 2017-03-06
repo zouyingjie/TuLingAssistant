@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        requestPermisssion();
+//        requestPermisssion();
     }
 
     private void requestPermisssion(){

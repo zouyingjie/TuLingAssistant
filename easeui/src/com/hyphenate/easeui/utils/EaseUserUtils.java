@@ -48,6 +48,7 @@ public class EaseUserUtils {
         }else{
             Glide.with(context).load(R.drawable.ease_default_avatar).into(imageView);
         }
+
     }
     
     /**

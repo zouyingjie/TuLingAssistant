@@ -76,7 +76,7 @@ public abstract class EaseChatRow extends LinearLayout {
         ackedView = (TextView) findViewById(R.id.tv_ack);
         deliveredView = (TextView) findViewById(R.id.tv_delivered);
 
-        userAvatarView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+//        userAvatarView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         onFindViewById();
     }
 
