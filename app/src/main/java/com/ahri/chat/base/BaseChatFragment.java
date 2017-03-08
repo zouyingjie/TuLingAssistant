@@ -14,7 +14,6 @@ import org.json.JSONObject;
  */
 
 public abstract class BaseChatFragment extends EaseChatFragment {
-    protected static final int FLAG_SEND_MESSAGE = 1;
 
     private Handler handler = new Handler() {
         @Override

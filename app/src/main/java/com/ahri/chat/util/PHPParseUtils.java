@@ -9,14 +9,20 @@ import org.json.JSONObject;
  */
 
 public class PHPParseUtils {
-    public static String parseInfo(String info) {
+    public static String parseInfo(String resultInfo) {
         try {
 
-            JSONArray resultArr = new JSONObject(info).getJSONArray("serach_result");
+            String[] infoArr = resultInfo.split("\n");
+            JSONObject resultJson = new JSONObject(infoArr[infoArr.length-1]);
+            JSONArray resultArr = resultJson.getJSONArray("serach_result");
             StringBuilder builder = new StringBuilder();
-
+            if(resultArr.length() == 0) {
+                builder.append("未检索到相关信息, 请重新检索");
+                return builder.toString();
+            }
             for (int i = 0; i < resultArr.length(); i++) {
-                JSONObject json = new JSONObject((String) resultArr.get(i));
+                String ele = resultArr.getString(i);
+                JSONObject json = new JSONObject(ele);
                 String title = json.getString("title");
                 String url = json.getString("url");
                 builder.append(title).append(" : ").append(url).append("\n");

@@ -20,11 +20,16 @@ public class Constant {
     public static final String PHP_SEARCH_URL = "http://192.168.1.11:4321/web/";
 
 
-    //SERVICE NAME
+    //SERVICE NAME AND CODE
     public static final String SERVICE_NAME_CHAT_WITH_TULING = "CHAT_WITH_TULING";
     public static final int SERVICE_CODE_CHAT_WITH_TULING = 1101;
     public static final String SERVICE_SERACH_PHP = "SERACH_PHP";
     public static final int SERVICE_CODE_SERACH_PHP = 1102;
+
+    //HTTP RESPONSE
+    public static final int RESPONSE_OK = 200;
+    public static final int RESPONSE_SERVER_ERR = 500;
+    public static final int RESPONSE_NOT_FOUND = 404;
 
 
 }

@@ -1,13 +1,9 @@
 package com.ahri.chat.ui.fragment;
 
-import android.os.Handler;
-import android.os.Message;
-
 import com.ahri.chat.base.BaseChatFragment;
 import com.ahri.chat.constant.Constant;
 import com.ahri.chat.util.MessagePostUtil;
 import com.ahri.chat.util.PHPParseUtils;
-import com.ahri.chat.util.TuLingParseUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,40 +14,11 @@ import org.json.JSONObject;
 
 public class PHPSearchFragment extends BaseChatFragment {
 
-    private static final int FLAG_SEND_MESSAGE = 1;
-
-    private Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            switch (msg.what) {
-                case FLAG_SEND_MESSAGE:
-                    refreshMessageList(PHPParseUtils.parseInfo((String) msg.obj));
-                    break;
-            }
-        }
-    };
 
 
     @Override
     protected void sendTextMessage(final String content) {
         super.sendTextMessage(content);
-//        conversation.appendMessage(createSendMessage(content));
-//        messageList.refresh();
-//        new Thread() {
-//            @Override
-//            public void run() {
-//                try {
-//
-//                    String result = MessagePostUtil.post(Constant.PHP_SEARCH_URL, json.toString());
-//                    Message msg = Message.obtain();
-//                    msg.what = FLAG_SEND_MESSAGE;
-//                    msg.obj = result;
-//                    handler.sendMessage(msg);
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }.start();
     }
 
     @Override
@@ -69,7 +36,7 @@ public class PHPSearchFragment extends BaseChatFragment {
 
     @Override
     protected void responseCallBack(String result) {
-        refreshMessageList(TuLingParseUtils.parseInfo(result));
+        refreshMessageList(PHPParseUtils.parseInfo(result));
     }
 
 }
