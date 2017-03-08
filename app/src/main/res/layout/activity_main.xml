@@ -45,13 +45,13 @@
         android:text="Start Chat"
         />
 
-    <!--<Button-->
-        <!--android:id="@+id/btn_add_contact"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textAllCaps="false"-->
-        <!--android:text="Add contact"-->
-        <!--/>-->
+    <Button
+        android:id="@+id/btn_search_php"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Search PHP"
+        />
 
 
 </LinearLayout>

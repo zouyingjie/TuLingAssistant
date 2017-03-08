@@ -16,5 +16,15 @@ public class Constant {
     public static final String TULING_RESULT_TYPE_NEWS = "302000";
     public static final String TULING_RESULT_TYPE_COOKBOOK = "308000";
 
+    public static final String TULING_URL = "http://www.tuling123.com/openapi/api";
+    public static final String PHP_SEARCH_URL = "http://192.168.1.11:4321/web/";
+
+
+    //SERVICE NAME
+    public static final String SERVICE_NAME_CHAT_WITH_TULING = "CHAT_WITH_TULING";
+    public static final int SERVICE_CODE_CHAT_WITH_TULING = 1101;
+    public static final String SERVICE_SERACH_PHP = "SERACH_PHP";
+    public static final int SERVICE_CODE_SERACH_PHP = 1102;
+
 
 }

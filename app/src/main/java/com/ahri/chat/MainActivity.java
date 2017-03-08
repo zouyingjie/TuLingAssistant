@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.ahri.chat.ui.activity.ChatActivity;
+import com.ahri.chat.ui.activity.PHPSearchActivity;
 import com.hyphenate.EMConnectionListener;
 import com.hyphenate.EMError;
 import com.hyphenate.EMMessageListener;
@@ -26,22 +27,27 @@ public class MainActivity extends AppCompatActivity {
     private Button btnSendMessage;
     private Button btnStartChat;
     private Button btn_add_contact;
+    private Button btnSearchPHP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        btnRegister = (Button) findViewById(R.id.btn_register);
-//        btnSendMessage = (Button) findViewById(R.id.btn_send_message);
-//        btnLogin = (Button) findViewById(R.id.btn_login);
         btnStartChat = (Button) findViewById(R.id.btn_start_chat);
-//        btn_add_contact = (Button) findViewById(R.id.btn_add_contact);
+        btnSearchPHP = (Button) findViewById(R.id.btn_search_php);
 
         btnStartChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSearchPHP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PHPSearchActivity.class);
                 startActivity(intent);
             }
         });
