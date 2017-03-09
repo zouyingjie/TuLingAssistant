@@ -13,11 +13,11 @@ public class PHPParseUtils {
         try {
 
             String[] infoArr = resultInfo.split("\n");
-            JSONObject resultJson = new JSONObject(infoArr[infoArr.length-1]);
+            JSONObject resultJson = new JSONObject(infoArr[infoArr.length - 1]);
             JSONArray resultArr = resultJson.getJSONArray("serach_result");
             StringBuilder builder = new StringBuilder();
-            if(resultArr.length() == 0) {
-                builder.append("未检索到相关信息, 请重新检索");
+            if (resultArr.length() == 0) {
+                builder.append("未检索到相关信息, 请提供更丰富的查询信息");
                 return builder.toString();
             }
             for (int i = 0; i < resultArr.length(); i++) {
@@ -28,7 +28,6 @@ public class PHPParseUtils {
                 builder.append(title).append(" : ").append(url).append("\n");
             }
             return builder.toString();
-
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -42,13 +42,14 @@ public class MessagePostUtil {
             writer.flush();
             connection.connect();
             int responseCode = connection.getResponseCode();
-            if(responseCode == Constant.RESPONSE_OK){
+            if (responseCode == Constant.RESPONSE_OK) {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
                 String line = "";
                 while ((line = reader.readLine()) != null) {
                     builder.append(line).append("\n");
                 }
-            }else {
+
+            } else {
                 builder.append("未检索到相关信息, 请稍后重试");
             }
         } catch (Exception e) {
