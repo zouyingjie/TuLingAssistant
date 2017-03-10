@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.ahri.chat.ui.activity.ChatActivity;
 import com.ahri.chat.ui.activity.PHPSearchActivity;
+import com.ahri.chat.ui.activity.StackoverActivity;
 import com.hyphenate.EMConnectionListener;
 import com.hyphenate.EMError;
 import com.hyphenate.EMMessageListener;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnStartChat;
     private Button btn_add_contact;
     private Button btnSearchPHP;
+    private Button btnStackOver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnStartChat = (Button) findViewById(R.id.btn_start_chat);
         btnSearchPHP = (Button) findViewById(R.id.btn_search_php);
+        btnStackOver = (Button) findViewById(R.id.btn_search_stackover);
 
         btnStartChat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, PHPSearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnStackOver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StackoverActivity.class);
                 startActivity(intent);
             }
         });

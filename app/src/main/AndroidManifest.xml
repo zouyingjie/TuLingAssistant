@@ -64,6 +64,9 @@
             android:name=".ui.activity.PHPSearchActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
+        <activity android:name=".ui.activity.StackoverActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

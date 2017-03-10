@@ -12,7 +12,7 @@ import org.json.JSONObject;
  * Created by zouyingjie on 2017/3/1.
  */
 
-public class PHPSearchFragment extends BaseChatFragment {
+public class StackoverFlowFragment extends BaseChatFragment {
 
 
 
@@ -29,14 +29,14 @@ public class PHPSearchFragment extends BaseChatFragment {
     @Override
     protected JSONObject getRequestContent(String content) throws JSONException {
         JSONObject json = new JSONObject();
-        json.put("SERVICE_NAME", Constant.SERVICE_SERACH_PHP);
+        json.put("SERVICE_NAME",Constant.SERVICE_STACKOVER);
         json.put("SEARCH_KEY", content);
         return json;
     }
 
     @Override
     protected void responseCallBack(String result) {
-        refreshMessageList(DBUtils.parsePHPInfo(result));
+        refreshMessageList(DBUtils.parseStackOverInfo(result));
     }
 
 }

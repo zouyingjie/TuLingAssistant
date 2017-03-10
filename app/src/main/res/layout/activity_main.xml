@@ -53,5 +53,13 @@
         android:text="Search PHP"
         />
 
+    <Button
+        android:id="@+id/btn_search_stackover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Stackover Flow"
+        />
+
 
 </LinearLayout>
