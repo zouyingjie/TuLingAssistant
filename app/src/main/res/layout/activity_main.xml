@@ -13,44 +13,29 @@
     tools:context="com.ahri.chat.MainActivity"
     >
 
-    <!--<Button-->
-        <!--android:id="@+id/btn_register"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textAllCaps="false"-->
-        <!--android:text="Register"-->
-        <!--/>-->
 
     <!--<Button-->
-        <!--android:id="@+id/btn_login"-->
+        <!--android:id="@+id/btn_start_chat"-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/tuling_question"-->
+        <!--android:layout_marginBottom="@dimen/activity_horizontal_margin"-->
+        <!--android:padding="4dp"-->
         <!--android:textAllCaps="false"-->
-        <!--android:text="Login"-->
+        <!--android:textColor="@color/btn_white_normal"-->
+        <!--android:background="@color/btn_gray_normal"-->
         <!--/>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/btn_send_message"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textAllCaps="false"-->
-        <!--android:text="SendMessage"-->
-        <!--/>-->
-
-    <Button
-        android:id="@+id/btn_start_chat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="Start Chat"
-        />
 
     <Button
         android:id="@+id/btn_search_php"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Search PHP"
+        android:text="@string/php_query"
+        android:padding="4dp"
+        android:textColor="@color/btn_white_normal"
+        android:background="@color/btn_gray_normal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
         />
 
     <Button
@@ -58,8 +43,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Stackover Flow"
+        android:text="@string/sof_question"
+        android:padding="4dp"
+        android:textColor="@color/btn_white_normal"
+        android:background="@color/btn_gray_normal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
         />
+
 
 
 </LinearLayout>

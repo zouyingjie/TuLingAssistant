@@ -41,6 +41,7 @@ public class MessagePostUtil {
             writer.println();
             writer.flush();
             connection.connect();
+
             int responseCode = connection.getResponseCode();
             if (responseCode == Constant.RESPONSE_OK) {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -48,7 +49,6 @@ public class MessagePostUtil {
                 while ((line = reader.readLine()) != null) {
                     builder.append(line).append("\n");
                 }
-
             } else {
                 builder.append("未检索到相关信息, 请稍后重试");
             }

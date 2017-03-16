@@ -1,5 +1,7 @@
 package com.ahri.chat.ui.fragment;
 
+import android.content.Intent;
+
 import com.ahri.chat.base.BaseChatFragment;
 import com.ahri.chat.constant.Constant;
 import com.ahri.chat.util.DBUtils;
@@ -13,8 +15,6 @@ import org.json.JSONObject;
  */
 
 public class StackoverFlowFragment extends BaseChatFragment {
-
-
 
     @Override
     protected void sendTextMessage(final String content) {
@@ -37,6 +37,21 @@ public class StackoverFlowFragment extends BaseChatFragment {
     @Override
     protected void responseCallBack(String result) {
         refreshMessageList(DBUtils.parseStackOverInfo(result));
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    protected void selectPicFromCamera() {
+        super.selectPicFromCamera();
+    }
+
+    @Override
+    protected void selectPicFromLocal() {
+        super.selectPicFromLocal();
     }
 
 }

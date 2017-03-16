@@ -17,6 +17,19 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.screen.landscape"/>
+
     <application
         android:name=".base.BaseApplication"
         android:allowBackup="true"
@@ -64,9 +77,34 @@
             android:name=".ui.activity.PHPSearchActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
-        <activity android:name=".ui.activity.StackoverActivity"
-                  android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".ui.activity.StackoverActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
+        <activity android:name=".ui.activity.OcrActivity">
+        </activity>
+
+
+        <activity
+            android:name=".androidocr.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".androidocr.HelpActivity"
+            android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".androidocr.PreferencesActivity"/>
     </application>
 
 </manifest>

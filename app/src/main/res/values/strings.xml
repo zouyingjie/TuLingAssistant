@@ -3,4 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tuling_question">图灵问答</string>
+    <string name="php_query">PHP手册查询</string>
+    <string name="sof_question">StackOverflow问答</string>
+    <string name="question_scan">问题扫描</string>
 </resources>

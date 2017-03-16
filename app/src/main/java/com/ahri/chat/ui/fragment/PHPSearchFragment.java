@@ -1,5 +1,7 @@
 package com.ahri.chat.ui.fragment;
 
+import android.content.Intent;
+
 import com.ahri.chat.base.BaseChatFragment;
 import com.ahri.chat.constant.Constant;
 import com.ahri.chat.util.DBUtils;
@@ -14,7 +16,12 @@ import org.json.JSONObject;
 
 public class PHPSearchFragment extends BaseChatFragment {
 
-
+//
+//    @Override
+//    public void onActivityCreated(Bundle savedInstanceState) {
+//        super.onActivityCreated(savedInstanceState);
+//       sendTipMessage();
+//    }
 
     @Override
     protected void sendTextMessage(final String content) {
@@ -38,5 +45,25 @@ public class PHPSearchFragment extends BaseChatFragment {
     protected void responseCallBack(String result) {
         refreshMessageList(DBUtils.parsePHPInfo(result));
     }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    protected void selectPicFromCamera() {
+        super.selectPicFromCamera();
+    }
+
+    @Override
+    protected void selectPicFromLocal() {
+        super.selectPicFromLocal();
+    }
+
+//    private void sendTipMessage(){
+//        sendTextMessage("Please Select your service: \n 1.PHP手册查询 \n 2.StackOverflow Python模块问题搜索" );
+//
+//    }
 
 }

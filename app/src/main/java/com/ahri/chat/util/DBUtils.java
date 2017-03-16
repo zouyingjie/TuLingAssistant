@@ -51,6 +51,9 @@ public class DBUtils {
                 String title = json.getString("title");
                 String url = json.getString("url");
                 builder.append(title).append(" : ").append(url).append("\n");
+                if (i == 10) {
+                    break;
+                }
             }
             return builder.toString();
         } catch (JSONException e) {

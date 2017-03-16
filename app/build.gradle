@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.ahri.chat"
@@ -43,9 +43,17 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile project(path: ':easeui')
+    compile project(path: ':OCRTest')
+//    compile project(path: ':tess-two')
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:support-v4:23.4.0'
-//    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.rmtheis:tess-two:6.2.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/turingSDK.jar')
+    compile files('libs/ocr_sdk-1.2.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile files('libs/jtar-1.0.4.jar')
+    compile files('libs/microsoft-translator-java-api-0.6-mod.jar')
+    compile files('libs/google-api-translate-java-0.98-mod2.jar')
 }

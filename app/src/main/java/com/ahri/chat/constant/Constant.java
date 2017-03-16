@@ -17,7 +17,7 @@ public class Constant {
     public static final String TULING_RESULT_TYPE_COOKBOOK = "308000";
 
     public static final String TULING_URL = "http://www.tuling123.com/openapi/api";
-    public static final String QUESTION_SERACH_URL = "http://192.168.1.11:4321/web/";
+    public static final String QUESTION_SERACH_URL = "http://192.168.1.5:4321/web/";
 
 
     //SERVICE NAME AND CODE
@@ -31,6 +31,12 @@ public class Constant {
     public static final int RESPONSE_OK = 200;
     public static final int RESPONSE_SERVER_ERR = 500;
     public static final int RESPONSE_NOT_FOUND = 404;
+
+
+    //百度 OCR
+    public static final String APP_ID = "9381283";
+    public static final String API_KEY = "rAOoa92Pgvg15VFaPaxR2H35";
+    public static final String SECRET_KEY = "sm4p7QFQ3WofqyvfKVnThuIz06fqwHmX";
 
 
 
