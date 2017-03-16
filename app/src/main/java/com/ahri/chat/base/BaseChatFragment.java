@@ -36,7 +36,6 @@ public abstract class BaseChatFragment extends EaseChatFragment {
     protected static final int TAKE_PHOTO_OCR = 11001;
     protected static final int TAKE_SCAN_CAMERA = 11002;
     protected boolean initSuccess;
-//    protected boolean send_tip = true;
 
     private String languageCode = "eng";
     private String languageName = "English";
@@ -147,30 +146,9 @@ public abstract class BaseChatFragment extends EaseChatFragment {
 
 
     protected void refreshMessageList(String content) {
-//
         conversation.appendMessage(createReceiveMessage(content));
         messageList.refresh();
     }
-
-//    protected void recognizeBitmap(final Bitmap bitmap) {
-//        new Thread() {
-//            @Override
-//            public void run() {
-//                if (initSuccess) {
-//                    baseApi.setImage(bitmap);
-//                    final String result1 = baseApi.getUTF8Text();
-//                    Log.i("LALALA", "***" + result1);
-//                    Message message = Message.obtain();
-//                    message.what = TAKE_PHOTO_OCR;
-//                    message.obj = result1;
-//                    handler.sendMessage(message);
-//                } else {
-//                    Log.i("LALALA", "***" + "wait init");
-//                }
-//
-//            }
-//        }.start();
-//    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

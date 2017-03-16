@@ -33,10 +33,6 @@ public class Constant {
     public static final int RESPONSE_NOT_FOUND = 404;
 
 
-    //百度 OCR
-    public static final String APP_ID = "9381283";
-    public static final String API_KEY = "rAOoa92Pgvg15VFaPaxR2H35";
-    public static final String SECRET_KEY = "sm4p7QFQ3WofqyvfKVnThuIz06fqwHmX";
 
 
 
