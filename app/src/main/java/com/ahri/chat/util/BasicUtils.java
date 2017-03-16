@@ -24,7 +24,7 @@ public class BasicUtils {
         CursorLoader loader = new CursorLoader(context, contentUri, proj, null, null, null);
         Cursor cursor = loader.loadInBackground();
         int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-        cursor.moveToFirst();
+        cursor.moveToFirst( );
         return cursor.getString(column_index);
     }
 

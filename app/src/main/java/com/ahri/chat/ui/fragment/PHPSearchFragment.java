@@ -54,9 +54,5 @@ public class PHPSearchFragment extends BaseChatFragment {
         super.selectPicFromLocal();
     }
 
-//    private void sendTipMessage(){
-//        sendTextMessage("Please Select your service: \n 1.PHP手册查询 \n 2.StackOverflow Python模块问题搜索" );
-//
-//    }
 
 }
