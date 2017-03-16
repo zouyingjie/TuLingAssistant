@@ -16,13 +16,6 @@ import org.json.JSONObject;
 
 public class PHPSearchFragment extends BaseChatFragment {
 
-//
-//    @Override
-//    public void onActivityCreated(Bundle savedInstanceState) {
-//        super.onActivityCreated(savedInstanceState);
-//       sendTipMessage();
-//    }
-
     @Override
     protected void sendTextMessage(final String content) {
         super.sendTextMessage(content);

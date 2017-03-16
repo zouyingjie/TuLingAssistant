@@ -59,7 +59,6 @@ public class TuLingParseUtils {
     }
 
     private static String parseCookBook(JSONObject json) throws JSONException {
-
         String text = json.getString("text");
         StringBuilder builder = new StringBuilder(text);
         JSONArray jsonArray = json.getJSONArray("list");

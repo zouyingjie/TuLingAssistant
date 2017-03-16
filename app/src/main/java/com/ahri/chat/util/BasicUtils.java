@@ -12,8 +12,13 @@ import android.provider.MediaStore;
 
 public class BasicUtils {
 
+    /**
+     * 获取图片的真实路径
+     * @param context
+     * @param contentUri
+     * @return
+     */
     public static String getRealPathFromURI(Context context, Uri contentUri) { //传入图片uri地址
-
 
         String[] proj = {MediaStore.Images.Media.DATA};
         CursorLoader loader = new CursorLoader(context, contentUri, proj, null, null, null);

@@ -9,6 +9,12 @@ import org.json.JSONObject;
  */
 
 public class DBUtils {
+
+    /**
+     * 解析PHP查询返回的数据
+     * @param resultInfo
+     * @return
+     */
     public static String parsePHPInfo(String resultInfo) {
         try {
 
@@ -34,6 +40,11 @@ public class DBUtils {
         return null;
     }
 
+    /**
+     * 解析StackOverflow查询传回的数据
+     * @param resultInfo
+     * @return
+     */
     public static String parseStackOverInfo(String resultInfo) {
         try {
 

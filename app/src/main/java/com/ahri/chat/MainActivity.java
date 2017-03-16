@@ -21,17 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        btnTulingChat = (Button) findViewById(R.id.btn_start_chat);
         btnSearchPHP = (Button) findViewById(R.id.btn_search_php);
         btnStackOver = (Button) findViewById(R.id.btn_search_stackover);
-
-//        btnTulingChat.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, ChatActivity.class);
-//                startActivity(intent);
-//            }
-//        });
 
         btnSearchPHP.setOnClickListener(new View.OnClickListener() {
             @Override
