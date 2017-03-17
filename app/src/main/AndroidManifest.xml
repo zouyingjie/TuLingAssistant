@@ -81,30 +81,8 @@
             android:name=".ui.activity.StackoverActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
-        <activity android:name=".ui.activity.OcrActivity">
-        </activity>
 
 
-        <activity
-            android:name=".androidocr.CaptureActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            >
-
-        </activity>
-
-        <activity
-            android:name=".androidocr.HelpActivity"
-            android:screenOrientation="user">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".androidocr.PreferencesActivity"/>
     </application>
 
 </manifest>

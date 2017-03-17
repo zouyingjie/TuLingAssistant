@@ -14,6 +14,7 @@ import org.json.JSONObject;
  * Created by zouyingjie on 2017/3/1.
  */
 
+@SuppressWarnings("ALL")
 public class StackoverFlowFragment extends BaseChatFragment {
 
     @Override

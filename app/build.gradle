@@ -16,6 +16,9 @@ android {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86'
             //还可以添加 'armeabi-v7a',
         }
+        jackOptions {
+            enabled true
+        }
     }
     packagingOptions {
         doNotStrip "*/arm64-v8a/*.so"
@@ -44,10 +47,8 @@ dependencies {
     })
     compile project(path: ':easeui')
     compile project(path: ':OCRTest')
-//    compile project(path: ':tess-two')
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:support-v4:23.4.0'
-    //    compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.rmtheis:tess-two:6.2.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/turingSDK.jar')
