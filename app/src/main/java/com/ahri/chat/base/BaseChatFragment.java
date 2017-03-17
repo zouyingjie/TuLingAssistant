@@ -179,6 +179,7 @@ public abstract class BaseChatFragment extends EaseChatFragment {
     public void insertText(String content){
         inputMenu.insertText(content);
     }
+
     protected abstract String requestService(JSONObject requestContent);
 
     protected abstract JSONObject getRequestContent(String content) throws JSONException;

@@ -13,6 +13,10 @@ import com.hyphenate.easeui.controller.EaseUI;
  * Created by zouyingjie on 2017/2/28.
  */
 
+/**
+ * TODO: 加中文识别， 阅读源码, 学习tessdata
+ * TODO: 使用OKHTTP代替URLConnection
+ */
 public class BaseApplication extends Application {
 
     @Override

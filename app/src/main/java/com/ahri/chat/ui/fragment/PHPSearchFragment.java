@@ -21,11 +21,22 @@ public class PHPSearchFragment extends BaseChatFragment {
         super.sendTextMessage(content);
     }
 
+    /**
+     * 发送请求
+     * @param requestContent
+     * @return
+     */
     @Override
     protected String requestService(JSONObject requestContent) {
         return MessagePostUtil.post(Constant.QUESTION_SERACH_URL, requestContent.toString());
     }
 
+    /**
+     * 创建请求数据
+     * @param content
+     * @return
+     * @throws JSONException
+     */
     @Override
     protected JSONObject getRequestContent(String content) throws JSONException {
         JSONObject json = new JSONObject();
@@ -34,6 +45,10 @@ public class PHPSearchFragment extends BaseChatFragment {
         return json;
     }
 
+    /**
+     * 响应处理
+     * @param result
+     */
     @Override
     protected void responseCallBack(String result) {
         refreshMessageList(DBUtils.parsePHPInfo(result));
